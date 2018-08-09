@@ -2,6 +2,10 @@ var express = require('express');
 var request = require('request');
 var creds = require('./.env.json');
 
+// TODO Take args from CLI for sprints
+// TODO Allow config of Jira instance from default with optional args
+// TODO More endpoints, better naming
+
 var app = express();
 
 app.get('/lastsprint', function(req, res) {
